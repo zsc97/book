@@ -1,0 +1,12 @@
+<view class="classify-content">
+    <swiper class="swiper" display-multiple-items='4'>
+            <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
+                <view class="item">
+                    <navigator class="switch"></navigator>
+                    <image class="classify-img" src="{{item.touxiang}}"></image>
+                    <text wx:if="{{item.type}}" class="classify-name">{{item.type}}</text>
+                    <text wx:else="{{item.name}}" class="classify-name">{{item.name}}</text>
+                </view>
+            </swiper-item> 
+    </swiper>
+</view>

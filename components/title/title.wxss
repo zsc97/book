@@ -1,0 +1,14 @@
+.classify-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50rpx;
+  
+  }
+  .classify-title .tag{
+    font-size: 40rpx;
+    color: #fff;
+  }
+  .classify-title .look-more{
+    color: #aaa;
+  }

@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#21272e",
+    "navigationBarTitleText": "Book",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "backgroundColor":"#2a313a",
+    "list":[
+      {"pagePath":"pages/index/index",
+       "iconPath":"./assets/image/shouye.png",
+       "selectedIconPath":"./assets/image/ashouye.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/image/xingqiu.png",
+        "selectedIconPath": "./assets/image/axingqiu.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/image/shu.png",
+        "selectedIconPath": "./assets/image/abook.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./assets/image/wode.png",
+        "selectedIconPath": "./assets/image/awode.png"
+      }
+    ],
+    "position":"bottom"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,8 @@
+<view class="book-list">
+    <view class="item" wx:for="{{bookList}}" wx:key="index">
+        <navigator></navigator>
+        <image class="book-img" src="{{item.touxiang}}" />
+        <text bindtap="send" class="book-name">{{item.bookname}}</text>
+        <text class="book-author">{{item.writername}}</text>
+    </view>
+</view>

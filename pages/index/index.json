@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mytitle":"../../components/title/title",
+    "myswitch":"../../components/lunbo/lunbo",
+    "booklist":"../../components/booklist/booklist"
+  }
+}

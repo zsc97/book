@@ -1,0 +1,6 @@
+<view class="classify-title">
+      <text bindtab="send" class="tag">{{titledata.titlename}}</text>
+      <navigator url="{{titledata.titleurl}}" class="look-more">
+        {{titledata.titlemore}}
+      </navigator>
+</view>

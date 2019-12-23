@@ -1,0 +1,33 @@
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .book-list .item{
+    position: relative;
+    display: flex;
+    margin-right: 40rpx;
+    flex-direction: column;
+    margin-bottom: 100rpx;
+  }
+  .book-list .item navigator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .book-list .book-img{
+    width: 190rpx;
+    height: 300rpx;
+    border-radius: 16rpx;
+  }
+  .book-list .book-name{
+    margin-top: 40rpx;
+    font-size: 28rpx;
+    color: #fff;
+  }
+  .book-list .book-author{
+    font-size: 24rpx;
+    margin-top: 20rpx;
+    color: #5d637c;
+  }
