@@ -6,11 +6,12 @@ Component({
   properties: {
     rankList:Array
   },
+
   /**
    * 组件的初始数据
    */
   data: {
-    arr:[1,2,3]
+
   },
 
   /**

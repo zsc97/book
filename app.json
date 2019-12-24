@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/bookdetail/bookdetail",
     "pages/index/index",
+    "pages/classify/classify",
     "pages/logs/logs"
   ],
   "window": {

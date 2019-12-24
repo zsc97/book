@@ -1,0 +1,75 @@
+.hot-sell-content{
+  height: 240rpx;
+}
+.hot-sell-content .list{
+  display: flex;
+  background: #2b323b;
+  border-radius: 30rpx;
+  margin-right: 46rpx;
+  position: relative;
+  margin-top: 60rpx;
+ 
+}
+.hot-sell-content .list navigator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hot-sell-content .list .bookimg{
+  width: 1200rpx;
+  height: 280rpx;
+  margin-left: 34rpx;
+  margin-top: -30rpx;
+}
+.hot-sell-content .list .list-right{
+  margin-left: 30rpx;
+}
+.hot-sell-content .list .list-right .list-right-t{
+  padding-right: 40rpx;
+  margin-top: 30rpx;
+}
+.hot-sell-content .list .list-right .list-right-t .bookauthor{
+  font-size: 24rpx;
+  color: #5d637c;
+}
+.hot-sell-content .list .bookname{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hot-sell-content .list .bookname text{
+  color: #fff;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+}
+.hot-sell-content .list .bookname image{
+  vertical-align: middle;
+    width: 36rpx;
+    height: 10rpx;
+}
+.hot-sell-content .list .list-right .list-right-b{
+ font-size: 24rpx;
+ color: #868dab; 
+ margin-top: 30rpx;
+ padding-right: 26rpx;
+ margin-bottom: 50rpx;
+ overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.hot-sell-content .list .list-right .list-right-b .line{
+  width: 334rpx;
+  margin-bottom: 30rpx;
+  height: 2rpx;
+  background: rgba(255, 255, 255, 0.2);
+}
+.hot-sell-swiper{
+  height: 360rpx;
+}
+.hotsell-item{
+  padding-bottom: 30rpx;
+}

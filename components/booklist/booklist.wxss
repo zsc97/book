@@ -8,6 +8,7 @@
     margin-right: 40rpx;
     flex-direction: column;
     margin-bottom: 100rpx;
+    width: 190rpx;
   }
   .book-list .item navigator{
     position: absolute;

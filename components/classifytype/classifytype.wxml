@@ -1,0 +1,19 @@
+<view class="hot-sell-content">
+    <view class="list" wx:for="{{bookList}}" wx:key="index">
+        <navigator></navigator>
+        <image class="bookimg" src="{{item.touxiang}}" />
+        <view class="list-right">
+            <view class="list-right-t">
+                <view class="bookname">
+                    <text>{{item.bookname}}</text>
+                    <image src="../../assets/image/more.png" />
+                </view>
+                <view class="bookauthor">{{item.writername}}</view>
+            </view>
+            <view class="list-right-b">
+                <view class="line"></view>
+                {{item.about}}
+            </view>
+        </view>
+    </view>
+</view>

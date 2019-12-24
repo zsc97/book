@@ -75,48 +75,15 @@
   border-radius: 60rpx;
 }
 .hot-sell{
-  margin-top: 70rpx;
+  margin-top: 40rpx;
+  padding-bottom: 88rpx;
 }
-.hot-sell-content{
-
-}
-.hot-sell-content .list{
-  display: flex;
-  
-
-}
-.hot-sell-content .list .list-right{
-  margin-left: 30rpx;
-}
-.hot-sell-content .list .list-right .list-right-t{
-  padding-right: 40rpx;
-  margin-top: 30rpx;
+.hot-sell-title{
+  padding-right: 46rpx;
   padding-bottom: 30rpx;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.hot-sell-content .list .list-right .list-right-t .bookauthor{
-  font-size: 24rpx;
-  color: #5d637c;
-}
-.hot-sell-content .list .bookname{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.hot-sell-content .list .bookname text{
-  color: #fff;
-  font-size: 36rpx;
-  margin-bottom: 20rpx;
-}
-.hot-sell-content .list .bookname image{
-  vertical-align: middle
-  ;
-    width: 36rpx;
-    height: 10rpx;
-}
-.hot-sell-content .list .list-right .list-right-b{
- font-size: 24rpx;
- color: #868dab; 
- margin-top: 30rpx;
- padding-right: 26rpx;
+.hot-sell-content-wrapper{
+  border-radius: 30rpx;
+  padding-right: 60rpx;
+  padding-bottom: 150rpx;
 }

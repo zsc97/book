@@ -1,0 +1,23 @@
+<view class="hot-sell-content">
+    <swiper class="hot-sell-swiper" hidden="{{flag}}">
+        <swiper-item class="hotsell-item" wx:for="{{bookList}}" wx:key="index">
+            <view class="list">
+                <navigator></navigator>
+                <image class="bookimg" src="{{item.touxiang}}" />
+                <view class="list-right">
+                    <view class="list-right-t">
+                        <view class="bookname">
+                            <text>{{item.bookname}}</text>
+                            <image src="../../assets/image/more.png" />
+                        </view>
+                        <view class="bookauthor">{{item.writername}}</view>
+                    </view>
+                    <view class="list-right-b">
+                        <view class="line"></view>
+                        {{item.about}}
+                    </view>
+                </view>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

@@ -32,10 +32,16 @@ App({
         }
       }
     })
+    //请求数据
+    
    
+    // console.log(this.globalData.checkLoad)
   },
+  
   globalData: {
-    userInfo: null,
-    classifyList:null,
+    rankList:[],
+    authorList:[],
+    bookList:[],
+    checkLoad:false
   }
 })

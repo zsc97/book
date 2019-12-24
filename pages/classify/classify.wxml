@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="header">
+        <image class="arrow" src="../../assets/image/leftarrow.png" />
+        <text class="title">{{type}}</text>
+        <image class="san" src="../../assets/image/san.png" />
+    </view>
+    <view class="classify-list">
+        <classifytype bookList="{{bookList}}"></classifytype>
+    </view>
+</view> 

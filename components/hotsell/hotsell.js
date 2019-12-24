@@ -1,16 +1,19 @@
-// components/lunbo/lunbo.js
+// components/hotsell/hotsell/hotsell.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    rankList:Array
+    bookList:Array,
   },
+
   /**
    * 组件的初始数据
-   */
+   */ready:function(){
+    console.log(this.properties.bookList)
+   },
   data: {
-    arr:[1,2,3]
+
   },
 
   /**

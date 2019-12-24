@@ -1,0 +1,78 @@
+<view class="container">
+    <view class="bookdetail">
+        <image />
+        <view class="bookdetail-right">
+            <view class="book-name">赛题</view>
+            <view class="book-author">作者：惊世毒妃</view>
+            <view class="book-intro">刘慈欣创作的系列长篇科幻小说地球往事三部曲的第三部作品...</view>
+            <view class="book-fen">
+                <text>5.0</text>
+            </view>
+        </view>
+    </view>
+    <view class="options">
+        <view class="collect">
+            <icon class="iconfont icon-favor-active" />
+            <text>收藏</text>
+        </view>
+        <view class="share">
+            <icon class="iconfont icon-fenxiang" />
+            <text>分享</text>
+        </view>
+        <view class="put-in">
+            <icon class="iconfont icon-shujia" />
+            <text>放入书架</text>
+        </view>
+    </view>
+    <view class="about">
+        <view class="about-detail">详情</view>
+        <view class="about-content">
+            与三体文明的战争使人类第一次看
+            到了宇宙黑暗的真相，地球文明像一个恐惧的孩子，
+            熄灭了寻友的篝火，在暗夜中发抖。自以为历经沧桑
+            其
+        </view>
+    </view>
+    <view class="look-page">
+        <text>查看目录</text>
+        <text class="you">></text>
+
+    </view>
+    <view class="comment">
+        <view class="comment-title">
+            <view class="comment-name">
+                <view class="comment-c">评论</view>
+                <view class="comment-num">215 条评论</view>
+            </view>
+            <view class="comment-write iconfont icon-pinglun1"></view>
+        </view>
+        <view class="comment-detail">
+            <image />
+            <view class="commenter-content">
+                <view class="commenter-name">你个废物</view>
+                <view class="commenter-about">
+                    大刘塑造的女性都具有明显的圣母特质，
+                    但是本质上弱爆了。叶是文革的毒瘤，庄是定制禁脔，
+                    程最经典——站在圣母和傻逼的微笑曲线上。大
+                </view>
+                <view class="comment-bottom">
+                    <view class="comment-time"></view>
+                    <view class="replay">
+                        <view class="like">
+                            <icon class="iconfont icon-favor-active" />
+                            <text class="like-num"></text>
+                        </view>
+                        <view class="message">
+                            <icon class="iconfont icon-pinglun" />
+                            <text class="message-num"></text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="footer">
+    <view class="look">试看</view>
+    <view class="buy">购买</view>
+</view>

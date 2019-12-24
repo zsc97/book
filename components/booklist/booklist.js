@@ -14,7 +14,7 @@ Component({
    * 组件的初始数据
    */
   ready:function(){
-    console.log(this.properties.bookList)
+   
   },
   data: {
 

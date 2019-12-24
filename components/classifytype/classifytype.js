@@ -1,18 +1,24 @@
-// components/lunbo/lunbo.js
+// components/booklist/booklist.js
 Component({
   /**
    * 组件的属性列表
    */
-  properties: {
-    rankList:Array
+  options:{
+    multipleSlots:true
   },
+  properties: {
+    bookList:Array,
+  },
+
   /**
    * 组件的初始数据
    */
-  data: {
-    arr:[1,2,3]
+  ready:function(){
+   
   },
+  data: {
 
+  },
   /**
    * 组件的方法列表
    */

@@ -2,9 +2,9 @@
     <swiper class="swiper" display-multiple-items='4'>
             <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
                 <view class="item">
-                    <navigator class="switch" url="../classify/classify?type={{item.name}}"></navigator>
+                    <navigator class="switch" url="../classify/classify?type={{item.type}}"></navigator>
                     <image class="classify-img" src="{{item.touxiang}}"></image>
-                    <text  class="classify-name">{{item.name}}</text>
+                    <text  class="classify-name">{{item.type}}</text>
                 </view>
             </swiper-item> 
     </swiper>

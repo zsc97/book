@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
   <view class="header">
     <view class="header-left">
@@ -13,19 +13,17 @@
     <input bindtap="sendurl" type="text" placeholder="搜索..."></input>
   </view>
   <view class="classify">
-    <view class="title" >
+    <view class="title">
       <mytitle titledata="{{title1}}"></mytitle>
     </view>
-    <myswitch rankList="{{rankList}}"></myswitch>
+    <type rankList="{{rankList}}"></type>
   </view>
-
   <view class="author-ranking">
     <view class="title">
       <mytitle titledata="{{title2}}"></mytitle>
     </view>
-    <myswitch rankList="{{authorList}}"></myswitch>
+    <author rankList="{{authorList}}"></author>
   </view>
-
   <view class="new-relalize">
     <view class="title">
       <mytitle titledata="{{title3}}"></mytitle>
@@ -34,36 +32,22 @@
       <booklist bookList="{{bookList}}"></booklist>
     </view>
   </view>
-
   <view class="hot-search">
     <view class="hot-serarch-title">
       <mytitle titledata="{{title4}}"></mytitle>
     </view>
     <view class="hot-search-content">
-      <navigator style="color:{{item.color}};border:4rpx solid {{item.color}}" wx:for="{{hotsearch}}" wx:key="index" class="hot-search-content-list">{{item.name}}</navigator>
+      <navigator style="color:{{item.color}};border:4rpx solid {{item.color}}" wx:for="{{hotsearch}}" wx:key="index" class="hot-search-content-list">
+        {{item.name}}
+      </navigator>
     </view>
   </view>
-
   <view class="hot-sell">
     <view class="hot-sell-title">
       <mytitle titledata="{{title5}}"></mytitle>
     </view>
-    <view class="hot-sell-content">
-      <view class="list">
-        <image src="../../assets/image/explore6.png" />
-        <view class="list-right">
-          <view class="list-right-t">
-            <view class="bookname">
-              <text>三体：死神</text>
-              <image src="../../assets/image/more.png" />
-            </view>
-            <view class="bookauthor">作者：刘慈欣</view>
-          </view>
-          <view class="list-right-b">
-            刘慈欣创作的系列长篇科幻小说地球往事三部曲的第三部作品...
-          </view>
-        </view>
-      </view>
+    <view class="hot-sell-content-wrapper">
+      <hotsell flag1="{{flag1}}" bookList="{{bookList}}"></hotsell>
     </view>
   </view>
 </view>

@@ -1,5 +1,5 @@
 <view class="book-list">
-    <view class="item" wx:for="{{bookList}}" wx:key="index">
+    <view class="item" wx:if="{{index<6}}" wx:for="{{bookList}}" wx:key="index">
         <navigator></navigator>
         <image class="book-img" src="{{item.touxiang}}" />
         <text bindtap="send" class="book-name">{{item.bookname}}</text>

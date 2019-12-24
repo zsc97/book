@@ -1,0 +1,26 @@
+/* pages/classify/classify.wxss */
+.container{
+    background: #21272e;
+    padding: 0 46rpx;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20rpx 0;
+}
+.header .arrow{
+    width: 40rpx;
+    height: 30rpx;
+}
+.header .san{
+    width: 40rpx;
+    height: 30rpx;
+}
+.header .title{
+   color: #fff;
+   font-size: 44rpx;
+}
+.classify-list{
+    background: #21272e;
+}

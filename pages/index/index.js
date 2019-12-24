@@ -4,6 +4,9 @@ const app = getApp()
 
 Page({
   data: {
+    flag:true,
+    flag1:true,
+    
     title1:{
         titlename:"分类排行",
         titlemore:"查看全部 >",
@@ -38,6 +41,7 @@ Page({
         color:"#4c906d",
         url: "../logs/logs"
       },
+
       {
         name:"都市言情",
         color:"#ec575e",
@@ -54,13 +58,14 @@ Page({
         url: "../logs/logs"
       },
     ],
-
     rankList:[],
     authorList:[],
-    bookList:[],
+    bookList:[]
   },
   onLoad:function(){
-    let that = this;
+    
+    requestData:{
+      let that = this;
       let req = function(obj){
         return new Promise((resolve,reject)=>{
           wx.request({
@@ -87,27 +92,36 @@ Page({
         url:"https://wujunhui.xyz/getfenleilist",
         data:{},
       }).then(function(res){ 
+        // console.log(app)
+        app.globalData.rankList = res.data;
+        console.log(res.data)
         that.setData({
-          rankList:res.data
-        })
+          rankList:app.globalData.rankList 
+        })    
       })
+     
       let req2 = req({
         url:"https://wujunhui.xyz/getwriters",
         data:{}
       }).then(function(res){
+        app.globalData.authorList = res.data;
+        console.log(res.data)
         that.setData({
-          authorList:res.data
+          authorList:app.globalData.authorList
         })
+  
       })
       let req3 = req({
         url:"https://wujunhui.xyz/getbooks",
         data:{}
       }).then(function(res){
-        console.log(res.data)
+        app.globalData.bookList = res.data;
         that.setData({
-          bookList:res.data.slice(0,6)
+          bookList:app.globalData.bookList
         })
       })
+    }
+
   },
   onShow:()=>{
    

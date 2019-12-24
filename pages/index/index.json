@@ -1,7 +1,9 @@
 {
   "usingComponents": {
     "mytitle":"../../components/title/title",
-    "myswitch":"../../components/lunbo/lunbo",
-    "booklist":"../../components/booklist/booklist"
+    "type":"../../components/type/type",
+    "author":"../../components/author/author",
+    "booklist":"../../components/booklist/booklist",
+    "hotsell":"../../components/hotsell/hotsell"
   }
 }
