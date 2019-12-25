@@ -1,0 +1,74 @@
+<view class="container">
+    <view class="header"></view>
+    <view class="personal-infor">
+        <view class="personal-ingor-t">
+            <view class="personal-img">
+                <image />
+            </view>
+            <view class="personal-right">
+                <view class="name">jsk</view>
+                <view class="addr">jsk</view>
+                <view class="atte-share">
+                   
+                     <view class="share">
+                        <icon class="iconfont icon-fenxiang" />
+                        <text >分享</text> 
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="personal-ingor-b">
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">关注</text>
+            </view>
+            <view class="line"></view>
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">粉丝</text>
+            </view>
+            <view class="line"></view>
+
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">喜欢</text>
+            </view>
+        </view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">
+            个人信息
+        </view>
+         <view class="right">
+            >
+        </view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">
+            我的消息
+        </view>
+        <view class="message-right">
+            6
+        </view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">
+            账户余额
+        </view>
+        <view class="right">
+          <text class="money"> 1375.00</text>>
+        </view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">
+            我的评论
+        </view>
+        <view class="right">
+           >
+        </view>
+    </view>
+</view>

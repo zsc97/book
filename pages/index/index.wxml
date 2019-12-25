@@ -8,6 +8,7 @@
       <image src="../../assets/image/san.png"></image>
     </view>
   </view>
+  
   <view class="search">
     <icon class="iconfont icon-soushuo"></icon>
     <input bindtap="sendurl" type="text" placeholder="搜索..."></input>

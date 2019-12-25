@@ -1,0 +1,10 @@
+/* pages/bookrack/bookrack.wxss */
+page{
+    background: #21272e;
+}
+.title{
+    padding: 0 46rpx;
+}
+.booklist{
+    padding-left: 46rpx;
+}

@@ -1,7 +1,10 @@
 /* pages/classify/classify.wxss */
+page{
+    background: rgb(33, 39, 46);
+    height: 100%;
+  }
 .container{
-    background: #21272e;
-    padding: 0 46rpx;
+    padding-left: 46rpx;
 }
 .header{
     display: flex;
@@ -20,7 +23,4 @@
 .header .title{
    color: #fff;
    font-size: 44rpx;
-}
-.classify-list{
-    background: #21272e;
 }

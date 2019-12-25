@@ -63,64 +63,79 @@ Page({
     bookList:[]
   },
   onLoad:function(){
-    
-    requestData:{
-      let that = this;
-      let req = function(obj){
-        return new Promise((resolve,reject)=>{
-          wx.request({
-            url: obj.url,
-            data: obj.data,
-            // header: { "Content-Type": "application/x-www-form-urlencoded" },
-            method: obj.method == undefined ? "get" : obj.method,
-            success: function (data) {
-              // 回调成功执行resolve
-              resolve(data)
-            },
-            fail: function (data) {
-              // 回调失败时
-              if (typeof reject == 'function') {
-                reject(data);
-              } else {
-                console.log(data);
-              }
-            },
-          })
-        })
-      }
-      let req1 = req({
-        url:"https://wujunhui.xyz/getfenleilist",
-        data:{},
-      }).then(function(res){ 
-        // console.log(app)
-        app.globalData.rankList = res.data;
-        console.log(res.data)
-        that.setData({
-          rankList:app.globalData.rankList 
-        })    
+    app.rankList().then(res=>{
+      this.setData({
+        rankList:res
       })
+    });
+    app.authorList().then(res=>{
+      this.setData({
+        authorList:res
+      })
+    })
+    app.bookList().then(res=>{
+      this.setData({
+        bookList:res
+      })
+    })
+   
+    // requestData:{
+    //   let that = this;
+    //   let req = function(obj){
+    //     return new Promise((resolve,reject)=>{
+    //       wx.request({
+    //         url: obj.url,
+    //         data: obj.data,
+    //         // header: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         method: obj.method == undefined ? "get" : obj.method,
+    //         success: function (data) {
+    //           // 回调成功执行resolve
+    //           resolve(data)
+    //         },
+    //         fail: function (data) {
+    //           // 回调失败时
+    //           if (typeof reject == 'function') {
+    //             reject(data);
+    //           } else {
+    //             console.log(data);
+    //           }
+    //         },
+    //       })
+    //     })
+    //   }
+    //   let req1 = req({
+    //     url:"https://wujunhui.xyz/getfenleilist",
+    //     data:{},
+    //   }).then(function(res){ 
+    //     // console.log(app)
+    //     app.globalData.rankList = res.data;
+    //     console.log(res.data)
+    //     that.setData({
+    //       rankList:app.globalData.rankList 
+    //     })    
+    //   })
      
-      let req2 = req({
-        url:"https://wujunhui.xyz/getwriters",
-        data:{}
-      }).then(function(res){
-        app.globalData.authorList = res.data;
-        console.log(res.data)
-        that.setData({
-          authorList:app.globalData.authorList
-        })
+    //   let req2 = req({
+    //     url:"https://wujunhui.xyz/getwriters",
+    //     data:{}
+    //   }).then(function(res){
+    //     app.globalData.authorList = res.data;
+    //     console.log(res.data)
+    //     that.setData({
+    //       authorList:app.globalData.authorList
+    //     })
   
-      })
-      let req3 = req({
-        url:"https://wujunhui.xyz/getbooks",
-        data:{}
-      }).then(function(res){
-        app.globalData.bookList = res.data;
-        that.setData({
-          bookList:app.globalData.bookList
-        })
-      })
-    }
+    //   })
+    //   let req3 = req({
+    //     url:"https://wujunhui.xyz/getbooks",
+    //     data:{}
+    //   }).then(function(res){
+    //     app.globalData.bookList = res.data;
+    //     that.setData({
+    //       bookList:app.globalData.bookList
+    //     })
+    //   })
+    // }
 
   },
   onShow:()=>{

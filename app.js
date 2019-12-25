@@ -37,11 +37,107 @@ App({
    
     // console.log(this.globalData.checkLoad)
   },
+  rankList:function(){
+    return new Promise((resolve,reject)=>{
+      wx.request({
+        url: "https://wujunhui.xyz/getfenleilist",
+        data: {},
+        // header: { "Content-Type": "application/x-www-form-urlencoded" },
+        method: "get",
+        success: (res)=> {
+          // 回调成功执行resolve
+          this.globalData.rankList = res.data;
+          resolve(this.globalData.rankList)
+        },
+        fail: function (data) {
+          // 回调失败时
+          if (typeof reject == 'function') {
+            reject(this.globalData.rankList);
+          } else {
+            console.log(data);
+          }
+        },
+      })
+    
+    })
+  },
+  authorList:function(){
+    return new Promise((resolve,reject)=>{
+      wx.request({
+        url:"https://wujunhui.xyz/getwriters",
+        data: {},
+        // header: { "Content-Type": "application/x-www-form-urlencoded" },
+        method: "get",
+        success: (res)=> {
+          // 回调成功执行resolve
+          this.globalData.authorList = res.data;
+          resolve(this.globalData.authorList)
+        },
+        fail: function (data) {
+          // 回调失败时
+          if (typeof reject == 'function') {
+            reject(this.globalData.authorList);
+          } else {
+            console.log(data);
+          }
+        },
+      })
+    
+    })
+  },
+  bookList:function(){
+    return new Promise((resolve,reject)=>{
+      wx.request({
+        url:"https://wujunhui.xyz/getbooks",
+        data: {},
+        // header: { "Content-Type": "application/x-www-form-urlencoded" },
+        method: "get",
+        success: (res)=> {
+          // 回调成功执行resolve
+          this.globalData.bookList = res.data;
+          resolve(this.globalData.bookList)
+        },
+        fail: function (data) {
+          // 回调失败时
+          if (typeof reject == 'function') {
+            reject(this.globalData.bookList);
+          } else {
+            console.log(data);
+          }
+        },
+      })
+    
+    })
+  },
+  hotSearch:function(){
+    return new Promise((resolve,reject)=>{
+      wx.request({
+        url:"https://wujunhui.xyz/gethostser",
+        data: {},
+        // header: { "Content-Type": "application/x-www-form-urlencoded" },
+        method: "get",
+        success: (res)=> {
+          // 回调成功执行resolve
+          this.globalData.hotSearch = res.data;
+          resolve(this.globalData.hotSearch)
+        },
+        fail: function (data) {
+          // 回调失败时
+          if (typeof reject == 'function') {
+            reject(this.globalData.hotSearch);
+          } else {
+            console.log(data);
+          }
+        },
+      })
+    
+    })
+  },
   
   globalData: {
     rankList:[],
     authorList:[],
     bookList:[],
-    checkLoad:false
+    hotSearch:[],
   }
 })

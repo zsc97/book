@@ -1,0 +1,42 @@
+/* pages/set/set.wxss */
+page{
+    background:rgb(33, 39, 46);
+}
+.container{
+    padding-bottom: 60rpx;
+}
+.left-right{
+    font-size: 36rpx;
+    padding: 54rpx 46rpx 54rpx 0;
+    margin-left: 46rpx;
+    border-bottom: 1rpx solid rgb(50, 59, 69);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(150, 156, 173);
+    position: relative;
+    
+}
+.left-right .clear{
+    
+}
+.left-right .link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.footer{
+    width: 100%;
+    font-size: 44rpx;
+    position: fixed;
+    text-align: center;
+    color: rgb(198, 201, 213);
+    line-height: 150rpx;
+    bottom: 0;
+    height: 150rpx;
+    background: rgb(46, 54, 63);
+}

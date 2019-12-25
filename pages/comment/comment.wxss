@@ -1,0 +1,6 @@
+/* pages/comment/comment.wxss */
+page{
+    background: #21272e;
+    padding: 0 46rpx ;
+
+}

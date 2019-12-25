@@ -1,6 +1,6 @@
 <view class="hot-sell-content">
     <view class="list" wx:for="{{bookList}}" wx:key="index">
-        <navigator></navigator>
+        <navigator url="../bookdetail/bookdetail?name={{item.bookname}}"></navigator>
         <image class="bookimg" src="{{item.touxiang}}" />
         <view class="list-right">
             <view class="list-right-t">

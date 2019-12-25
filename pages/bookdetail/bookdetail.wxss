@@ -1,7 +1,10 @@
-@import "../../assets/style/iconfont.wxss";
+
+.active{
+    color: rgb(232, 57, 47);
+}
 .container {
   background: #21272e;
-  padding: 0 0 0 46rpx;
+  padding: 0 0 12rpx 46rpx;
 }
 .bookdetail {
   padding-right: 46rpx;
@@ -42,24 +45,25 @@
     font-size: 40rpx;
     color: #ffce44;
 }
+.book-fen icon{
+    color: rgb(251, 104, 148);
+}
+.book-fen text{
+    margin-left:32rpx;
+}
 .options{
     margin-top: 60rpx;
     font-size: 30rpx;
     color: #ccc;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid rgb(50, 54, 67);
+    border-bottom: 1px solid rgb(50, 54, 67);
     padding: 50rpx 0;
     display: flex;
     justify-content: space-between;
 }
-.collect{
 
-}
 .options icon{
     margin-right: 20rpx;
-}
-.share{
-
 }
 .put-in{
     margin-right: 46rpx;
@@ -81,8 +85,8 @@
 }
 .look-page{
     color: #fff;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid rgb(50, 54, 67);
+    border-bottom: 1px solid rgb(50, 54, 67);
     padding: 50rpx 0;
     display: flex;
     justify-content: space-between;
@@ -115,15 +119,107 @@
 .comment-write{
     font-size: 40rpx;
 }
-.comment-detail{
-    margin-top: 70rpx;
+.footer{
+    height: 154rpx;
     display: flex;
+    background:rgb(55, 58, 73);
+    padding: 0 46rpx;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #fff;
 }
-.comment-detail image{
+.footer .look{
+    padding: 34rpx 84rpx;
+    background: rgb(146, 149, 169);
+    text-align: center;
+    border-radius: 80rpx;
     
-    margin-right: 26rpx;
-    width: 60rpx;
-    height: 60rpx;
-    /* border-radius: 50%; */
-    background: #000;
+}
+.footer .buy{
+    padding: 34rpx 174rpx;
+    background:rgb(251, 104, 148);
+    text-align: center;
+    border-radius: 80rpx;
+
+}
+.add-bookrack{
+    width: 410rpx;
+    height: 610rpx;
+    background: #333644;
+    position: fixed;
+    left:100rpx;
+    top: 200rpx;
+    border-radius: 60rpx;
+    z-index: 2;
+    padding: 80rpx 70rpx;
+}
+.add-bookrack .add-img{
+    margin-top: 86rpx;
+    margin: 0 auto;
+    width: 220rpx;
+    height: 320rpx;
+}
+.add-bookrack .add-img image{
+    border-radius: 30rpx;
+    width: 100%;
+    height: 100%;
+}
+.add-bookrack .add-hint{
+    margin-top: 60rpx;
+    font-size: 40rpx;
+    color: rgb(235, 236, 237);
+    text-align: center;
+}
+.add-bookrack .add-status{
+    margin-top: 60rpx;
+    width: 100%;
+    padding: 36rpx 0;
+    background: #fb6894;
+    border-radius: 80rpx;
+    text-align: center;
+    color: #fff;
+}
+
+.shareto{
+    width: 100%;
+    height: 340rpx;
+    background: #2d353f;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.shareto .close{
+    position: absolute;
+    top: 36rpx;
+    right: 36rpx;
+    width: 50rpx;
+    height: 50rpx;
+    background: #1b1f24;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 50rpx;
+    
+}
+.shareto .toplace{
+    margin-top: 152rpx;
+    padding: 0 82rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.shareto .toplace .list{
+    width: 80rpx;
+    height: 80rpx;
+    background:#fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shareto .toplace .list image{
+    width: 44rpx;
+    height: 44rpx;
+   
 }

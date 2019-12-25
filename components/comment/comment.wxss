@@ -1,0 +1,49 @@
+@import "../../assets/style/iconfont.wxss";
+.comment-detail{
+    margin-top: 70rpx;
+    display: flex;
+    background: #21272e;
+}
+.comment-detail image{
+    margin-right: 26rpx;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    background: #000;
+}
+.comment-detail .commenter-content{
+    padding-right: 46rpx;
+    padding-bottom: 42rpx;
+    border-bottom: 1px solid rgb(38, 45, 52);
+}
+.commenter-name{
+    font-size: 28rpx;
+    color: #fff;
+    margin-bottom: 34rpx;
+}
+.commenter-about{
+    font-size: 24rpx;
+    color: rgb(134, 141, 171);
+    margin-bottom: 40rpx;
+}
+.comment-bottom{
+    color: rgb(134, 141, 171);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22rpx;
+}
+.comment-bottom .replay{
+    display: flex;
+    align-items: center;
+}
+.comment-bottom .replay .like{
+    margin-right: 30rpx;
+}
+.like icon,.message icon{
+    font-size: 22rpx;
+    margin-right: 12rpx;
+}
+.like-num,.message-num{
+    font-size: 22rpx;
+}

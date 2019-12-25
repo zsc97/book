@@ -2,7 +2,7 @@
     <swiper class="hot-sell-swiper" hidden="{{flag}}">
         <swiper-item class="hotsell-item" wx:for="{{bookList}}" wx:key="index">
             <view class="list">
-                <navigator></navigator>
+                <navigator url="../bookdetail/bookdetail?name={{item.bookname}}"></navigator>
                 <image class="bookimg" src="{{item.touxiang}}" />
                 <view class="list-right">
                     <view class="list-right-t">

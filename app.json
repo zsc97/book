@@ -1,7 +1,16 @@
 {
   "pages": [
-    "pages/bookdetail/bookdetail",
+    "pages/set/set",
+    "pages/author/author",
+    "pages/my/my",
     "pages/index/index",
+    
+   
+    "pages/explore/explore",
+    "pages/bookrack/bookrack",
+    "pages/bookdetail/bookdetail",
+    "pages/comment/comment",
+   
     "pages/classify/classify",
     "pages/logs/logs"
   ],
@@ -19,17 +28,17 @@
        "selectedIconPath":"./assets/image/ashouye.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/explore/explore",
         "iconPath": "./assets/image/xingqiu.png",
         "selectedIconPath": "./assets/image/axingqiu.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/bookrack/bookrack",
         "iconPath": "./assets/image/shu.png",
         "selectedIconPath": "./assets/image/abook.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/my/my",
         "iconPath": "./assets/image/wode.png",
         "selectedIconPath": "./assets/image/awode.png"
       }

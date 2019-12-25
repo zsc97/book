@@ -1,0 +1,75 @@
+<view class="container">
+    <view class="personal-infor">
+        <view class="personal-ingor-t">
+            <view class="personal-img">
+                <image />
+            </view>
+            <view class="personal-right">
+                <view class="name">jsk</view>
+                <view class="addr">jsk</view>
+                <view class="atte-share">
+                    <view class="share">
+                        <icon class="iconfont icon-fenxiang" />
+                        <text>分享</text>
+                    </view>
+                    <view class="share">
+                        <icon class="iconfont icon-fenxiang" />
+                        <text>分享</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="personal-ingor-b">
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">关注</text>
+            </view>
+            <view class="line"></view>
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">粉丝</text>
+            </view>
+            <view class="line"></view>
+            <view class="attention">
+                <text class="attention-num">1252</text>
+                <text class="attention-text">喜欢</text>
+            </view>
+        </view>
+    </view>
+    <view class="products">
+        <view class="products-title">
+            <view class="products-title-l">代表作</view>
+            <view class="products-title-r">总共3本书</view>
+        </view>
+        <view class="list">
+            <view class="bookdetail">
+                <image src="{{bookList[0].touxiang}}" />
+                <view class="bookdetail-right">
+                    <view class="book-name">1245</view>
+                    <view class="book-fen">
+                        <icon wx:for="5" class="iconfont icon-xing" />
+                        <text>5.0</text>
+                    </view>
+                    <view class="book-intro">
+                        sjhkdfskdfgjskdgldfhsgfjkdlgjhfdgsdjskdfghfkdggjkfdklg
+                    </view>
+                    <view class="book-author">366人阅读</view>
+                </view>
+            </view>
+             <view class="bookdetail">
+                <image src="{{bookList[0].touxiang}}" />
+                <view class="bookdetail-right">
+                    <view class="book-name">1245</view>
+                    <view class="book-fen">
+                        <icon wx:for="5" class="iconfont icon-xing" />
+                        <text>5.0</text>
+                    </view>
+                    <view class="book-intro">
+                        sjhkdfskdfgjskdgldfhsgfjkdlgjhfdgsdjskdfghfkdggjkfdklg
+                    </view>
+                    <view class="book-author">366人阅读</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

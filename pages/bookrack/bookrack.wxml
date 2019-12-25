@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="title">
+        <title titledata="{{title1}}"></title>
+    </view>
+    <view class="booklist">
+        <booklist bookList="{{bookList}}"></booklist>
+    </view>
+    <view class="title">
+        <title titledata="{{title2}}"></title>
+    </view>
+    <view class="booklist">
+        <booklist bookList="{{bookList}}"></booklist>
+    </view>
+
+</view>

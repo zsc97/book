@@ -1,0 +1,115 @@
+/* pages/my/my.wxss */
+.container{
+    background: #21272e;
+    padding-bottom: 240rpx;
+}
+.personal-infor{
+    padding: 0 46rpx;
+    background: #21272e;
+   
+}
+.personal-ingor-t{
+    display: flex;
+}
+.personal-img{
+    width: 240rpx;
+    height: 240rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #000;
+    margin-right: 40rpx;
+}
+.personal-img image{
+    width: 100%;
+    height: 100%;
+}
+.personal-right{
+    width: 370rpx;
+    color: #fff;
+    margin-top: 30rpx;
+}
+.personal-right .name{
+    font-size: 44rpx;
+    margin-bottom: 20rpx;
+}
+.personal-right .addr{
+    font-size: 28rpx;
+    color: #b5b7c5;
+}
+.personal-right .atte-share{
+    margin-top: 46rpx;
+    display: flex;
+    font-size: 26rpx;
+    justify-content: flex-end;
+}
+.personal-right .atte-share .share{
+    padding: 16rpx 36rpx;
+    display: flex;
+    border: 1px solid #b5b7c5;
+    border-radius: 20rpx;
+    align-items: baseline;
+}
+.personal-right .atte-share .share icon{
+    font-size: 26rpx;
+    margin-right: 16rpx;
+    margin-top: -20rpx;
+}
+.personal-ingor-b{
+    border-radius: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 54rpx;
+    height: 130rpx;
+    background:rgb(43, 50, 59);
+}
+.personal-ingor-b .attention{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.personal-ingor-b .line{
+    height: 100rpx;
+    width: 2rpx;
+    background: rgb(54, 60, 69);
+}
+.personal-ingor-b .attention .attention-num{
+    font-size: 36rpx;
+    color: #fff;
+}
+.personal-ingor-b .attention .attention-text{
+    font-size: 24rpx;
+    color: rgb(117, 128, 141);
+}
+
+.left-right{
+    font-size: 36rpx;
+    padding: 54rpx 46rpx 54rpx 0;
+    margin-left: 46rpx;
+    border-bottom: 1rpx solid rgb(117, 128, 141);
+    display: flex;
+    justify-content: space-between;
+    color: rgb(150, 156, 173);
+    position: relative;
+    
+}
+.left-right .link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.message-right{
+    font-size: 24rpx;
+    width: 40rpx;
+    height: 40rpx;
+    background: rgb(251, 104, 148);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40rpx;
+}
+.money{
+    color: rgb(251, 104, 148);
+    margin-right: 10rpx;
+}

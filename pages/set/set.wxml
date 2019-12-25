@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">查看账户</view>
+        <view class="right">></view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">个人资料</view>
+        <view class="right">></view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">消息提醒</view>
+        <view class="right">
+            <switch checked="{{switch1Checked}}" bindchange="switch1Change" />
+        </view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">清理缓存</view>
+        <view class="clear">128MB ></view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">帮助中心</view>
+        <view class="right">></view>
+    </view>
+    <view class="left-right">
+        <navigator class="link"></navigator>
+        <view class="left">关于我们</view>
+        <view class="right">></view>
+    </view>
+    <view class="footer">退出登录</view>
+</view>
