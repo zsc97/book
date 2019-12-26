@@ -1,27 +1,23 @@
-// pages/my/my.js
-const app = getApp()
+// pages/cart/cart.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    a:[]
+    bookList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(getApp())
-    app.rankList().then(function(res){
+    getApp().bookList().then(res => {
       console.log(res)
-      console.log(app.globalData.rankList)
-    })
-    console.log(app.globalData.rankList)
-  },
-  onShow:function(){
-    console.log(getApp())
+      this.setData({
+      bookList:res
+      })
+   })
   },
 
   /**

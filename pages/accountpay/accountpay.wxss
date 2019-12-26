@@ -1,0 +1,127 @@
+page {
+  background: #21272e;
+}
+.header {
+  margin: 0 46rpx;
+  padding: 70rpx 50rpx;
+  background: #2b323b;
+  border-radius: 16rpx;
+}
+.header .money {
+  font-size: 48rpx;
+  color: #697480;
+  margin-bottom: 44rpx;
+}
+.header .money-num {
+  position: relative;
+  font-size: 128rpx;
+  color: #fff;
+}
+.header .money-num .money-sign {
+  position: absolute;
+  width: 80rpx;
+  height: 96rpx;
+}
+.header .money-num input {
+  padding-left: 90rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #38414d;
+}
+.footer {
+  text-align: center;
+  font-size: 44rpx;
+  color: #fff;
+  padding: 54rpx 0;
+  background: #2e363f;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.footer navigator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.confirm {
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  height: 810rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 46rpx;
+  background: #2d353f;
+}
+.close {
+  width: 50rpx;
+  height: 50rpx;
+  background: #1b1f24;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50rpx;
+  position: absolute;
+  color: #fff;
+  top: 50rpx;
+  right: 30rpx;
+}
+.confirm-pay {
+  margin-top: 100rpx;
+  font-size: 48rpx;
+  color: #656f7b;
+}
+.confirm-pay-num {
+  margin-top: 24rpx;
+  font-size: 128rpx;
+  color: #fff;
+}
+.order-infor {
+  border-bottom: 1px solid #313a44;
+  margin-top: 50rpx;
+  padding-right: 46rpx;
+  display: flex;
+  padding-bottom: 50rpx;
+  justify-content: space-between;
+}
+.order-infor .order-infor-l,
+.pay-way-l {
+  font-size: 36rpx;
+  color: #acb0bb;
+}
+.order-infor .order-infor-r,
+.pay-way-r {
+  font-size: 30rpx;
+  color: #4d5660;
+}
+.pay-way {
+  display: flex;
+  justify-content: space-between;
+  padding: 56rpx 0;
+  padding-right: 46rpx;
+  border-bottom: 1px solid #313a44;
+}
+.password {
+  display: flex;
+  justify-content: center;
+  margin-top: 46rpx;
+  align-items: flex-end;
+  color: #5f6873;
+}
+.password .password-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.password .password-img image {
+  width: 100%;
+  height: 100%;
+}
+.password text {
+  margin-bottom: 10rpx;
+}
+.password .input-password {
+  color: #fb6894;
+  margin-left: 20rpx;
+}

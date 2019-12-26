@@ -1,0 +1,36 @@
+page{
+    background: #21272e;
+}
+.header{
+    margin: 0 46rpx;
+    padding: 70rpx 50rpx;
+    background: #2b323b;
+    border-radius: 16rpx;
+}
+.header .money{
+    font-size: 48rpx;
+    color: #697480;
+    margin-bottom: 44rpx;
+}
+.header .money-num{
+    font-size: 128rpx;
+    color: #fff;
+}
+.footer{
+    text-align: center;
+    font-size: 44rpx;
+    color: #fff;
+    padding: 54rpx 0;
+    background: #fb6894;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.footer navigator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

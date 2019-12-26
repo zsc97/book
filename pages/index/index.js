@@ -10,12 +10,12 @@ Page({
     title1:{
         titlename:"分类排行",
         titlemore:"查看全部 >",
-        titleurl: "../logs/logs"
+        titleurl: "../classifydetail/classifydetail"
       },
     title2:{
       titlename:"作者排行",
       titlemore:"查看全部 >",
-      titleurl: "../logs/logs"
+      titleurl: "../authortop/authortop"
     },
     title3:{
       titlename:"新发布",
@@ -64,6 +64,7 @@ Page({
   },
   onLoad:function(){
     app.rankList().then(res=>{
+     
       this.setData({
         rankList:res
       })

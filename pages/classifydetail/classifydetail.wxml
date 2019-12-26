@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="search">
+    <icon class="iconfont icon-soushuo"></icon>
+    <input bindtap="sendurl" type="text" placeholder="搜索..."></input>
+  </view>
+  <view class="top-classify">
+    <view class="classify-content">
+      <swiper class="swiper" display-multiple-items='5'>
+        <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
+          <view class="item">
+            <navigator class="switch" url="../logs/logs?type={{item.name}}"></navigator>
+            <text class="classify-name">{{item.type}}</text>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="new">
+    <view class="title">
+      <title titledata="{{title1}}"></title>
+    </view>
+    <view class="booklist">
+      <booklist bookList="{{bookList}}"></booklist>
+    </view>
+  </view>
+  <view class="new">
+    <view class="title">
+      <title titledata="{{title2}}"></title>
+    </view>
+    <view class="booklist">
+      <booklist bookList="{{bookList}}"></booklist>
+    </view>
+  </view>
+</view>

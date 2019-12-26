@@ -3,6 +3,29 @@
     background: #21272e;
     padding-bottom: 240rpx;
 }
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16rpx;
+    padding-right: 46rpx;
+}
+.header .set-img{
+    width: 50rpx;
+    height: 50rpx;
+    position: relative;
+}
+.header .set-img .to-set{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.header .set-img image{
+    width: 100%;
+    height: 100%;
+}
+
 .personal-infor{
     padding: 0 46rpx;
     background: #21272e;

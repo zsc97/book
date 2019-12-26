@@ -1,27 +1,34 @@
-// pages/my/my.js
-const app = getApp()
+// pages/classifydetail/classifydetail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    a:[]
+    title1: {
+      titlename:"新上架",
+      titlemore:"查看全部 >",
+      titleurl: "../classifydetail/classifydetail"
+    },
+    title2: {
+      titlename:"热门",
+      titlemore:"查看全部 >",
+      titleurl: "../classifydetail/classifydetail"
+    },
+    rankList:[],
+    bookList:[]
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(getApp())
-    app.rankList().then(function(res){
-      console.log(res)
-      console.log(app.globalData.rankList)
+    console.log(getApp().globalData.rankList)
+    this.setData({
+      rankList: getApp().globalData.rankList,
+      bookList: getApp().globalData.bookList
     })
-    console.log(app.globalData.rankList)
-  },
-  onShow:function(){
-    console.log(getApp())
   },
 
   /**

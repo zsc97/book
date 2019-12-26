@@ -1,0 +1,38 @@
+<view class="container">
+   <view class="hot-sell-content">
+      <view class="list" wx:for="{{bookList}}" wx:if="{{index<3}}" wx:key="index">
+         <navigator url="../bookdetail/bookdetail?name={{item.bookname}}"></navigator>
+         <view class="book-img">
+            <image class="bookimg" src="{{item.touxiang}}" />
+         </view>
+         <view class="list-right">
+            <view class="list-right-t">
+               <view class="bookname">
+                  <text>{{item.bookname}}</text>
+                  <image src="../../assets/image/more.png" />
+               </view>
+               <view class="bookauthor">{{item.writername}}</view>
+            </view>
+            <view class="list-right-b">
+               <view class="line"></view>
+               ￥{{item.money}}
+            </view>
+         </view>
+      </view>
+   </view>
+   <view class="footer">
+      <view class="jine">
+         <view class="zong">
+            总计(元)
+            <text >241.00</text>
+         </view>
+         <view class="yu">
+            余额(元)
+             <text >1241.00</text>
+         </view>
+      </view>
+      <view class="buy">
+         购买
+      </view>
+   </view>
+</view>

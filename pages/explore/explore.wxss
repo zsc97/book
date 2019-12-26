@@ -1,1 +1,94 @@
 /* pages/explore/explore.wxss */
+page{
+  background: #21272e;
+}
+.header{
+  display: flex;
+  padding: 0 46rpx;
+  justify-content: flex-end;
+}
+.header icon{
+  margin-left: 20rpx;
+}
+.icon-caidan{
+  color: #71768c;
+}
+.icon-fangkuai{
+  color: #ffffff;
+}
+.center{
+  margin: 0 180rpx;
+  margin-top: 100rpx;
+}
+.center-t{
+  padding-bottom: 80rpx;
+  border-bottom: 1rpx solid #293039;
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+
+}
+.center-t image{
+  width: 400rpx;
+  height: 580rpx;
+  background: #000;
+  border-radius: 20rpx;
+}
+.center-t .name{
+  font-size: 44rpx;
+  color: #fff;
+  margin-top: 42rpx;
+}
+.center-t .author{
+  font-size: 36rpx;
+  color: #5a5f6e;
+  margin-top: 42rpx;
+}
+
+.reader{
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.reader image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background: #000;
+}
+.reader-num{
+  text-align: center;
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  color: #6e7380;
+}
+.footer{
+  padding-bottom: 80rpx;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: flex-end
+}
+.footer-b image{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background: #000;
+}
+.footer-b{
+  padding: 6rpx 0;
+  display: flex;
+  align-items: center;
+  background: red;
+  padding-right:80rpx;
+  border-top-left-radius: 34rpx;
+  border-bottom-left-radius: 34rpx;
+}
+.tjr-name{
+  font-size: 24rpx;
+  color: #aaabad;
+}
+.tjr-tj{
+  font-size: 22rpx;
+  color: #535762;
+}

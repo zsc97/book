@@ -1,2 +1,33 @@
-<!--pages/explore/explore.wxml-->
-<text>pages/explore/explore.wxml</text>
+<view class="container">
+  <view class="header">
+    <icon class="iconfont icon-caidan" />
+    <icon class="iconfont icon-fangkuai" />
+  </view>
+  <view class="center">
+    <view class="center-t">
+      <image />
+      <view class="name">三体</view>
+      <view class="author">关键是</view>
+    </view>
+    <view class="center-b">
+      <view class="reader">
+        <image  />
+        <image  />
+        <image  />
+        <image  />
+      </view>
+      <view class="reader-num">
+        457人阅读
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="footer-b">
+      <image  />
+      <view class="tjr">
+        <view class="tjr-name">skjdf</view>
+        <view class="tjr-tj">推荐</view>
+      </view>
+    </view>
+  </view>
+</view>

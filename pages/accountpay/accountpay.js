@@ -1,27 +1,30 @@
-// pages/my/my.js
-const app = getApp()
+// pages/accountpay/accountpay.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    a:[]
+    flag:true,
+    bg:""
   },
-
+  next(){
+    this.setData({
+      flag:false,
+      bg:"#0d1012"
+    })
+  },
+  close(){
+    this.setData({
+      flag:true,
+      bg:""
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(getApp())
-    app.rankList().then(function(res){
-      console.log(res)
-      console.log(app.globalData.rankList)
-    })
-    console.log(app.globalData.rankList)
-  },
-  onShow:function(){
-    console.log(getApp())
+
   },
 
   /**

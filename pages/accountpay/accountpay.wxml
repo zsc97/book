@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="header">
+        <view class="money">充值余额(元)</view>
+        <view class="money-num">
+            <image class="money-sign" src="../../assets/image/money.png" />
+            <input type="text" />
+        </view>
+    </view>
+    <view class="footer" bindtap="next">
+        <navigator url=""></navigator>
+        下一步
+    </view>
+    <view hidden="{{flag}}" class="confirm">
+        <view bindtap="close" class="close">X</view>
+        <view class="confirm-pay">确认付款(元)</view>
+        <view class="confirm-pay-num">250.00</view>
+        <view class="order-infor">
+            <view class="order-infor-l">订单信息</view>
+            <view class="order-infor-r">充值</view>
+        </view>
+        <view class="pay-way">
+            <view class="pay-way-l">付款方式</view>
+            <view class="pay-way-r">中国银行></view>
+        </view>
+        <view class="password">
+            <view class="password-img">
+                <image src="../../assets/image/figuer.png" />
+            </view>
+            <text> 指纹验证或</text>
+            <text class="input-password">输入密码</text>
+        </view>
+    </view>
+</view>

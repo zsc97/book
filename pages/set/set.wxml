@@ -13,7 +13,7 @@
         <navigator class="link"></navigator>
         <view class="left">消息提醒</view>
         <view class="right">
-            <switch checked="{{switch1Checked}}" bindchange="switch1Change" />
+            <switch color="#fb6894" checked="{{switch1Checked}}" bindchange="switch1Change" />
         </view>
     </view>
     <view class="left-right">

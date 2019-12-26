@@ -4,11 +4,11 @@
     <view class="header-left">
       <image src="../../assets/image/shape.png"></image>
     </view>
+    
     <view class="header-right">
       <image src="../../assets/image/san.png"></image>
     </view>
   </view>
-  
   <view class="search">
     <icon class="iconfont icon-soushuo"></icon>
     <input bindtap="sendurl" type="text" placeholder="搜索..."></input>

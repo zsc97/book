@@ -1,34 +1,45 @@
-// pages/my/my.js
-const app = getApp()
+// pages/authortop/authortop.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
+ 
   data: {
-    a:[]
+    title1: {
+      titlename:"热门作者",
+      titlemore:"查看全部 >",
+      titleurl: "../logs/logs"
+    },
+    title2: {
+      titlename:"新晋作者",
+      titlemore:"查看全部 >",
+      titleurl: "../logs/logs"
+    },
+    title3: {
+      titlename:"其他作者",
+      titlemore:"查看全部 >",
+      titleurl: "../logs/logs"
+    },
+    rankList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(getApp())
-    app.rankList().then(function(res){
-      console.log(res)
-      console.log(app.globalData.rankList)
-    })
-    console.log(app.globalData.rankList)
-  },
-  onShow:function(){
-    console.log(getApp())
+   
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    console.log(app.globalData.authorList)
+    this.setData({
+      rankList:app.globalData.authorList
+    })
   },
 
   /**

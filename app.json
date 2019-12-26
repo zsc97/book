@@ -1,16 +1,25 @@
 {
   "pages": [
+    "pages/explore/explore",
+    "pages/content/content",
+    
+    "pages/index/index",
+    "pages/classifydetail/classifydetail",
+    
+    
+    "pages/authortop/authortop",
+    "pages/cart/cart",
+    "pages/my/my",
+   
+    "pages/accountmoney/accountmoney",
+    "pages/accountpay/accountpay",
     "pages/set/set",
     "pages/author/author",
-    "pages/my/my",
-    "pages/index/index",
-    
    
-    "pages/explore/explore",
+    
     "pages/bookrack/bookrack",
     "pages/bookdetail/bookdetail",
     "pages/comment/comment",
-   
     "pages/classify/classify",
     "pages/logs/logs"
   ],

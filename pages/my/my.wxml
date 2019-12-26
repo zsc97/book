@@ -1,5 +1,10 @@
-<view class="container">
-    <view class="header"></view>
+<view class="container" style="background:{{bg}}">
+    <view class="header">
+        <view class="set-img">
+            <navigator url="../set/set" class="to-set"></navigator>
+            <image src="../../assets/image/set.png" />
+        </view>
+    </view>
     <view class="personal-infor">
         <view class="personal-ingor-t">
             <view class="personal-img">
@@ -54,7 +59,7 @@
         </view>
     </view>
     <view class="left-right">
-        <navigator class="link"></navigator>
+        <navigator url="../accountmoney/accountmoney" class="link"></navigator>
         <view class="left">
             账户余额
         </view>

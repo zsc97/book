@@ -1,0 +1,10 @@
+<view class="container">
+   <view class="header">
+       <view class="money">我的余额(元)</view>
+       <view class="money-num">1350</view>
+   </view>
+   <view class="footer">
+       <navigator url="../accountpay/accountpay"></navigator>
+       充值
+   </view>
+</view>

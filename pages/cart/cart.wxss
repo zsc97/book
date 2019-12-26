@@ -1,8 +1,9 @@
 page{
-
+  background: #282828;
 }
 .hot-sell-content{
   height: 240rpx;
+  padding-left: 46rpx;
 }
 .hot-sell-content .list{
   display: flex;
@@ -20,13 +21,19 @@ page{
   right: 0;
   bottom: 0;
 }
-.hot-sell-content .list .bookimg{
-  width: 1200rpx;
-  height: 280rpx;
+.hot-sell-content .list  .book-img{
+  width: 170rpx;
+  height: 260rpx;
+  border-radius: 30rpx;
   margin-left: 34rpx;
   margin-top: -30rpx;
 }
+.hot-sell-content .list  .book-img .bookimg{
+  width: 100%;
+  height: 100%;
+}
 .hot-sell-content .list .list-right{
+  width: 460rpx;
   margin-left: 30rpx;
 }
 .hot-sell-content .list .list-right .list-right-t{
@@ -53,8 +60,8 @@ page{
     height: 10rpx;
 }
 .hot-sell-content .list .list-right .list-right-b{
- font-size: 24rpx;
- color: #868dab; 
+ font-size: 48rpx;
+ color: #ff1d8d; 
  margin-top: 30rpx;
  padding-right: 26rpx;
  margin-bottom: 50rpx;
@@ -66,8 +73,33 @@ display: -webkit-box;
 }
 .hot-sell-content .list .list-right .list-right-b .line{
   width: 334rpx;
-  margin-bottom: 30rpx;
+  margin-bottom: 10rpx;
   height: 2rpx;
   background: rgba(255, 255, 255, 0.2);
+}
+
+.footer{
+  height: 220rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer .jine{
+  margin-bottom: 48rpx;
+  font-size: 32rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 46rpx;
+  color: #fff;
+}
+.footer .jine text{
+  color: #de1e7f;
+}
+.footer .buy{
+  width: 100%;
+  padding: 54rpx 0;
+  color: #fff;
+  background: #fb6894;
+  text-align: center;
 }
 
