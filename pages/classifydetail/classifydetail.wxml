@@ -8,7 +8,7 @@
       <swiper class="swiper" display-multiple-items='5'>
         <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
           <view class="item">
-            <navigator class="switch" url="../logs/logs?type={{item.name}}"></navigator>
+            <navigator class="switch" url="../classify/classify?type={{item.name}}"></navigator>
             <text class="classify-name">{{item.type}}</text>
           </view>
         </swiper-item>

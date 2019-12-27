@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bookList:[]
+    bookList: [],
+    total:[]
   },
 
   /**
@@ -15,23 +16,32 @@ Page({
     getApp().bookList().then(res => {
       console.log(res)
       this.setData({
-      bookList:res
+      bookList:res.slice(0,3),
       })
-   })
+      let sum = 0;
+     let newsum = this.data.bookList.map((item, index) => {
+        sum += parseInt(item.money)
+     })
+      console.log(this.data.bookList)
+      this.setData({
+        total: sum
+        })
+      
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+   
   },
 
   /**

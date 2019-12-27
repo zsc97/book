@@ -1,25 +1,44 @@
 // pages/author/author.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    author: [],
+    book: [],
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(app.globalData.authorList)
+    console.log(app.globalData.bookList)
 
+    let newauthor = app.globalData.authorList.filter((item, index)=> {
+      if (item.name === this.options.name) {
+        return item;
+      }
+    })
+    let newbook = app.globalData.bookList.filter((item, index)=> {
+      if (item.writername === this.options.name) {
+        return item;
+      }
+    })
+    this.setData({
+      author: newauthor,
+      book:newbook
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+   
   },
 
   /**

@@ -1,0 +1,11 @@
+page{
+  background: #21272e;
+}
+.container{
+  padding: 0 46rpx;
+  color: #cfcfd4;
+  line-height: 70rpx;
+}
+.header{
+  margin-bottom: 30rpx;
+}

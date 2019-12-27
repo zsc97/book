@@ -2,8 +2,10 @@ page{
   background: #282828;
 }
 .hot-sell-content{
-  height: 240rpx;
+  
+  /* height: 240rpx; */
   padding-left: 46rpx;
+  padding-bottom: 500rpx;
 }
 .hot-sell-content .list{
   display: flex;
@@ -79,10 +81,12 @@ display: -webkit-box;
 }
 
 .footer{
+  padding-top: 60rpx;
   height: 220rpx;
   position: fixed;
   bottom: 0;
   width: 100%;
+  background: #282e37;
 }
 .footer .jine{
   margin-bottom: 48rpx;

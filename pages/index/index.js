@@ -20,7 +20,7 @@ Page({
     title3:{
       titlename:"新发布",
       titlemore:"查看全部 >",
-      titleurl: "../logs/logs"
+      titleurl: "../classify/classify"
     },
     title4:{
       titlename:"热门搜索",
@@ -28,7 +28,7 @@ Page({
     title5:{
       titlename:"热销榜",
       titlemore:"查看全部 >",
-      titleurl: "../logs/logs"
+      titleurl: "../classify/classify"
     },
     hotsearch:[
       {
@@ -60,9 +60,25 @@ Page({
     ],
     rankList:[],
     authorList:[],
-    bookList:[]
+    bookList: [],
+    hotSearch:[]
   },
-  onLoad:function(){
+  tosearch() {
+    wx.navigateTo({
+      url: '../search/search',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  },
+  onLoad: function () {
+
     app.rankList().then(res=>{
      
       this.setData({
@@ -77,6 +93,11 @@ Page({
     app.bookList().then(res=>{
       this.setData({
         bookList:res
+      })
+    })
+    app.hotSearch().then(res=>{
+      this.setData({
+        hotSearch:res
       })
     })
    
@@ -140,7 +161,7 @@ Page({
 
   },
   onShow:()=>{
-   
+   console.log(app.globalData)
   }
    
 })

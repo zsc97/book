@@ -1,13 +1,18 @@
-// pages/classify/classify.js
-const app = getApp();
+// pages/search/search.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type:"",
-    bookList:[]
+    title1: {
+      titlename:"热门搜索",
+      titlemore:"查看全部 >",
+      titleurl: "../classifydetail/classifydetail"
+    },
+    bookList: [],
+    searchword:""
   },
 
   /**
@@ -15,22 +20,25 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
-    // let aaa = app.globalData.bookList.filter((item,index)=>{
-    //   return item.type === this.options.type;
-    // })
     this.setData({
-      type:options.type,
-      bookList:app.globalData.bookList
+      searchword: options.searchword
     })
+  },
+  cancel() {
     
-    console.log(app.globalData.bookList)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    app.bookList().then(res => {
+      console.log(app.globalData.bookList)
+      this.setData({
+        bookList:app.globalData.bookList
+      })
+    })
+    console.log(this.data.bookList)
   },
 
   /**

@@ -22,7 +22,12 @@ Page({
       titlemore:"查看全部 >",
       titleurl: "../logs/logs"
     },
-    rankList:[]
+    rankList: [],
+    topauthor: [],
+    guanzhu: [
+      { no: "+关注" },
+      {yes:"已关注"}
+    ]
   },
 
   /**
@@ -31,14 +36,18 @@ Page({
   onLoad: function (options) {
    
   },
-
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    
     console.log(app.globalData.authorList)
     this.setData({
-      rankList:app.globalData.authorList
+      rankList: app.globalData.authorList,
+      topauthor: app.globalData.authorList.filter(function (item, index) {
+        return index < 3;
+      })
     })
   },
 

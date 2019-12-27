@@ -9,12 +9,12 @@ Page({
     title1:{
       titlename:"正在阅读",
       titlemore:"查看全部 >",
-      titleurl: "../logs/logs"
+      titleurl: "../classify/classify"
     },
     title2:{
       titlename:"未读",
       titlemore:"查看全部 >",
-      titleurl: "../logs/logs"
+      titleurl: "../classify/classify"
     },
     bookList:[]
   },

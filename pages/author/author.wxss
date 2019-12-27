@@ -1,3 +1,6 @@
+page{
+    background: #21272e;
+}
 .container{
     background: #21272e;
     padding-bottom: 240rpx;
@@ -40,6 +43,9 @@
     display: flex;
     font-size: 26rpx;
     justify-content: space-between;
+}
+.personal-right .atte-share .share.guanz{
+    background: #488ce1;
 }
 .personal-right .atte-share .share{
     padding: 16rpx 36rpx;
@@ -94,6 +100,7 @@
     font-size: 36rpx;
 }
 .products-title-r{
+    padding-right: 46rpx;
     font-size: 24rpx;
     color: rgb(58, 106, 165);
 }
@@ -107,7 +114,7 @@
   .bookdetail image {
     margin-right: 30rpx;
     width: 180rpx;
-    height: 260rpx;
+    height: 300rpx;
     display: block;
     background: #000;
     border-radius: 20rpx;

@@ -13,7 +13,8 @@ page{
 .icon-caidan{
   color: #71768c;
 }
-.icon-fangkuai{
+
+.active{
   color: #ffffff;
 }
 .center{
@@ -91,4 +92,28 @@ page{
 .tjr-tj{
   font-size: 22rpx;
   color: #535762;
+}
+
+
+.view{
+  margin-top: 60rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 90rpx;
+  justify-content: space-between;
+}
+.items{
+  margin-top: 80rpx;
+}
+.items image{
+  width: 270rpx;
+  height: 400rpx;
+  background: #000;
+  border-radius: 20rpx;
+}
+.items .name{
+  margin-top: 16rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
 }

@@ -1,9 +1,9 @@
-<view class="container">
+<view class="{{!flag}}?'bg':'' container">
     <view class="header">
         <view class="money">充值余额(元)</view>
         <view class="money-num">
             <image class="money-sign" src="../../assets/image/money.png" />
-            <input type="text" />
+            <input bindinput="getMoney" type="number" />
         </view>
     </view>
     <view class="footer" bindtap="next">
@@ -13,7 +13,7 @@
     <view hidden="{{flag}}" class="confirm">
         <view bindtap="close" class="close">X</view>
         <view class="confirm-pay">确认付款(元)</view>
-        <view class="confirm-pay-num">250.00</view>
+        <view class="confirm-pay-num">{{money}}</view>
         <view class="order-infor">
             <view class="order-infor-l">订单信息</view>
             <view class="order-infor-r">充值</view>

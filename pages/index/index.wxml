@@ -9,9 +9,9 @@
       <image src="../../assets/image/san.png"></image>
     </view>
   </view>
-  <view class="search">
+  <view class="search" bindtap="tosearch">
     <icon class="iconfont icon-soushuo"></icon>
-    <input bindtap="sendurl" type="text" placeholder="搜索..."></input>
+    <input disabled="{{true}}" bindtap="sendurl" type="text" placeholder="搜索..."></input>
   </view>
   <view class="classify">
     <view class="title">
@@ -38,7 +38,7 @@
       <mytitle titledata="{{title4}}"></mytitle>
     </view>
     <view class="hot-search-content">
-      <navigator style="color:{{item.color}};border:4rpx solid {{item.color}}" wx:for="{{hotsearch}}" wx:key="index" class="hot-search-content-list">
+      <navigator url="../search/search?searchword={{item.name}}" style="color:{{item.color}};border:4rpx solid {{item.color}}" wx:for="{{hotsearch}}" wx:key="index" class="hot-search-content-list">
         {{item.name}}
       </navigator>
     </view>

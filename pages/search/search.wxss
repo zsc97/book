@@ -1,0 +1,63 @@
+page{
+  background:#21272e;
+}
+.header{
+  margin-top: 30rpx;
+  margin-bottom: 80rpx;
+  display: flex;
+  padding: 0 46rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.search{
+  position: relative;
+  color: #9197a7;
+}
+.search input{
+  background: #2d353d;
+  padding: 34rpx 46rpx 34rpx 90rpx;
+  margin-right: 46rpx;
+  border-radius: 80rpx;
+}
+.search icon{
+  font-size: 40rpx;
+  position: absolute;
+  top: 30rpx;
+  left: 30rpx;
+}
+.cancel{
+  color: #5c616f;
+  font-size: 24rpx;
+}
+.title{
+ padding: 0 46rpx;
+}
+.booklist{
+  margin-left: 46rpx;
+}
+.search-history-title{
+  display: flex;
+  padding: 0 46rpx;
+  justify-content: space-between;
+  align-items: center;
+  color: #adb0b2;
+  font-size: 36rpx;
+  margin-top: 42rpx;
+}
+.search-history-title icon{
+  color: #606578;
+}
+.search-history-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40rpx;
+  padding: 0 46rpx;
+  margin-bottom: 120rpx;
+}
+.search-history-content .lists{
+  padding: 20rpx 40rpx;
+  border-radius: 30rpx;
+  background: #45485b;
+  margin-right: 30rpx;
+  color: #9698a3;
+}

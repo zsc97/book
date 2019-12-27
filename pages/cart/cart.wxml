@@ -1,6 +1,6 @@
 <view class="container">
    <view class="hot-sell-content">
-      <view class="list" wx:for="{{bookList}}" wx:if="{{index<3}}" wx:key="index">
+      <view class="list" wx:for="{{bookList}}" wx:key="index">
          <navigator url="../bookdetail/bookdetail?name={{item.bookname}}"></navigator>
          <view class="book-img">
             <image class="bookimg" src="{{item.touxiang}}" />
@@ -24,7 +24,7 @@
       <view class="jine">
          <view class="zong">
             总计(元)
-            <text >241.00</text>
+            <text >{{total}}.00</text>
          </view>
          <view class="yu">
             余额(元)

@@ -1,8 +1,6 @@
 {
   "usingComponents": {
     "title":"../../components/title/title",
-    "author":"../../components/author/author"
-
-
+    "booklist":"../../components/booklist/booklist"
   }
 }

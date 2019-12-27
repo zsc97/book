@@ -2,30 +2,30 @@
   <view class="topauthor">
     <view class="two">
       <view class="two-img">
-        <image class="image1" src="" />
-        <image class="image2" src="" />
+        <image class="image1" src="../../assets/image/second.png" />
+        <image class="image2" src="{{topauthor[0].touxiang}}" />
         <view class="two-ranking ranking">2</view>
       </view>
-      <view class="two-name name">yjj</view>
-      <view class="fans-num">4544 粉丝</view>
+      <view class="two-name name">{{topauthor[0].name}}</view>
+      <view class="fans-num">{{topauthor[0].fens}} 粉丝</view>
     </view>
     <view class="two">
       <view class="two-img first">
-        <image class="first-img image1" src="" />
-        <image class="image2 first-img2" src="" />
+        <image class="first-img image1" src="../../assets/image/first.png" />
+        <image class="image2 first-img2" src="{{topauthor[1].touxiang}}" />
         <view class="first-num ranking">1</view>
       </view>
-      <view class="one-name name">yjj</view>
-      <view class="fans-num">4544 粉丝</view>
+      <view class="one-name name">{{topauthor[1].name}}</view>
+      <view class="fans-num">{{topauthor[1].fens}} 粉丝</view>
     </view>
     <view class="two">
       <view class="two-img">
-        <image class="image1" src="" />
-        <image class="image2" src="" />
+        <image class="image1" src="../../assets/image/third.png" />
+        <image class="image2" src="{{topauthor[2].touxiang}}" />
         <view class="three-ranking ranking">3</view>
       </view>
-      <view class="three-name name">yjj</view>
-      <view class="fans-num">4544 粉丝</view>
+      <view class="three-name name">{{topauthor[2].name}}</view>
+      <view class="fans-num">{{topauthor[2].fens}} 粉丝</view>
     </view>
   </view>
   <view class="hot-author">
@@ -33,47 +33,50 @@
       <title titledata="{{title1}}"></title>
     </view>
     <view class="classify-content">
-        <swiper class="swiper" display-multiple-items='4'>
-          <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
-            <view class="item">
-              <navigator class="switch" url="../logs/logs?type={{item.name}}"></navigator>
-              <image class="classify-img" src="{{item.touxiang}}"></image>
-              <text class="classify-name">{{item.name}}</text>
-            </view>
-          </swiper-item>
-        </swiper>
-      </view>
+      <swiper class="swiper" display-multiple-items='4'>
+        <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
+          <view class="item">
+            <navigator class="switch" url="../author/author?name={{item.name}}"></navigator>
+            <image class="classify-img" src="{{item.touxiang}}"></image>
+            <text class="classify-name">{{item.name}}</text>
+            <view class="guanzhu">+关注</view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
   </view>
-   <view class="hot-author">
+  <view class="hot-author">
     <view class="title">
       <title titledata="{{title2}}"></title>
     </view>
     <view class="classify-content">
-        <swiper class="swiper" display-multiple-items='4'>
-          <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
-            <view class="item">
-              <navigator class="switch" url="../logs/logs?type={{item.name}}"></navigator>
-              <image class="classify-img" src="{{item.touxiang}}"></image>
-              <text class="classify-name">{{item.name}}</text>
-            </view>
-          </swiper-item>
-        </swiper>
-      </view>
+      <swiper class="swiper" display-multiple-items='4'>
+        <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
+          <view class="item">
+            <navigator class="switch" url="../author/author?name={{item.name}}"></navigator>
+            <image class="classify-img" src="{{item.touxiang}}"></image>
+            <text class="classify-name">{{item.name}}</text>
+            <view class="guanzhu">关注</view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
   </view>
-   <view class="hot-author">
+  <view class="hot-author">
     <view class="title">
       <title titledata="{{title3}}"></title>
     </view>
     <view class="classify-content">
-        <swiper class="swiper" display-multiple-items='4'>
-          <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
-            <view class="item">
-              <navigator class="switch" url="../logs/logs?type={{item.name}}"></navigator>
-              <image class="classify-img" src="{{item.touxiang}}"></image>
-              <text class="classify-name">{{item.name}}</text>
-            </view>
-          </swiper-item>
-        </swiper>
-      </view>
+      <swiper class="swiper" display-multiple-items='4'>
+        <swiper-item class="list" wx:for="{{rankList}}" wx:key="index">
+          <view class="item">
+            <navigator class="switch" url="../author/author?name={{item.name}}"></navigator>
+            <image class="classify-img" src="{{item.touxiang}}"></image>
+            <text class="classify-name">{{item.name}}</text>
+            <view class="guanzhu">关注</view>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
   </view>
 </view>

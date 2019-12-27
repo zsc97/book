@@ -53,7 +53,18 @@ Page({
     console.log(111)
   },
   tryLook(){
-   
+   wx.navigateTo({
+     url: '../article/article',
+     success: function(res){
+       // success
+     },
+     fail: function() {
+       // fail
+     },
+     complete: function() {
+       // complete
+     }
+   })
   },
   buy(){
     console.log(111)

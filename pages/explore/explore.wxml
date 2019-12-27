@@ -1,33 +1,47 @@
 <view class="container">
   <view class="header">
-    <icon class="iconfont icon-caidan" />
-    <icon class="iconfont icon-fangkuai" />
+    <icon bindtap="list" class="{{!flag?'active':''}} iconfont icon-caidan" />
+    <icon  bindtap="view" class="{{flag?'active':''}} iconfont icon-fangkuai" />
   </view>
-  <view class="center">
-    <view class="center-t">
-      <image />
-      <view class="name">三体</view>
-      <view class="author">关键是</view>
-    </view>
-    <view class="center-b">
-      <view class="reader">
-        <image  />
-        <image  />
-        <image  />
-        <image  />
+  <view hidden="{{!flag}}" class="list">
+    <view class="center">
+      <view class="center-t">
+        <image />
+        <view class="name">三体</view>
+        <view class="author">关键是</view>
       </view>
-      <view class="reader-num">
-        457人阅读
+      <view class="center-b">
+        <view class="reader">
+          <image />
+          <image />
+          <image />
+          <image />
+        </view>
+        <view class="reader-num">457人阅读</view>
+      </view>
+    </view>
+    <view class="footer">
+      <view class="footer-b">
+        <image />
+        <view class="tjr">
+          <view class="tjr-name">skjdf</view>
+          <view class="tjr-tj">推荐</view>
+        </view>
       </view>
     </view>
   </view>
-  <view class="footer">
-    <view class="footer-b">
+  <view  hidden="{{flag}}" class="view">
+    <view class="items">
       <image  />
-      <view class="tjr">
-        <view class="tjr-name">skjdf</view>
-        <view class="tjr-tj">推荐</view>
-      </view>
+      <view class="name">sdf</view>
+    </view>
+    <view class="items">
+      <image  />
+      <view class="name">sdf</view>
+    </view>
+    <view class="items">
+      <image  />
+      <view class="name">sdf</view>
     </view>
   </view>
 </view>

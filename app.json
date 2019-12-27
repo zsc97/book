@@ -1,16 +1,18 @@
 {
   "pages": [
+    "pages/index/index",
+   "pages/cart/cart",
+   
+    "pages/article/article",
+    
+   
+    "pages/search/search",
     "pages/explore/explore",
     "pages/content/content",
-    
-    "pages/index/index",
     "pages/classifydetail/classifydetail",
-    
-    
     "pages/authortop/authortop",
-    "pages/cart/cart",
+    
     "pages/my/my",
-   
     "pages/accountmoney/accountmoney",
     "pages/accountpay/accountpay",
     "pages/set/set",

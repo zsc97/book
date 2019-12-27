@@ -7,6 +7,9 @@ page {
   background: #2b323b;
   border-radius: 16rpx;
 }
+.header.bg{
+  background: #0d1012;
+}
 .header .money {
   font-size: 48rpx;
   color: #697480;

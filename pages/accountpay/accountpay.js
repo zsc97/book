@@ -1,12 +1,39 @@
 // pages/accountpay/accountpay.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    money:'',
     flag:true,
-    bg:""
+    bg: "",
+    userinfo:{}
+  },
+  getMoney(e) {
+    if (e.detail.value.trim().length === 0) {
+      wx.showToast({
+        title: '请输入要充值的钱数',
+        icon: 'none',
+        duration: 2000
+      })
+    }
+    else {
+      let reg = /^[1-9]+[0-9]*$/
+      if (reg.test(e.detail.value)) {
+        this.setData({
+          money:e.detail.value
+        })
+      }
+      else {
+        wx.showToast({
+          title: '只能输入数字且不能以0开头',
+          icon: 'none',
+          duration: 2000
+        })
+      }
+    }
   },
   next(){
     this.setData({
@@ -31,7 +58,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.setData({
+      userinfo:app.globalData.userInfo
+    })
   },
 
   /**

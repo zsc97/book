@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="header">
+    <view class="search">
+      <icon class="iconfont icon-soushuo"></icon>
+      <input value="{{searchword}}" focus="{{true}}" confirm-type="search" bindtap="sendurl" type="text" placeholder="搜索..."></input>
+    </view>
+    <view class="cancel" bindtap="cancel">取消</view>
+  </view>
+  <view class="hotsearch">
+    <view class="title">
+      <title titledata="{{title1}}"></title>
+    </view>
+    <view class="booklist">
+      <booklist bookList="{{bookList}}"></booklist>
+    </view>
+  </view>
+  <view class="search-history">
+    <view class="search-history-title">
+      <view >搜索历史</view>
+      <icon class="iconfont icon-huishou" />
+    </view>
+    <view class="search-history-content">
+      <view class="lists">意思</view>
+      <view class="lists">意思yixai</view>
+
+    </view>
+  </view>
+</view>

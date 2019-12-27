@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    flag: true,
   },
 
   /**
@@ -14,7 +14,17 @@ Page({
   onLoad: function (options) {
 
   },
-
+  list() { 
+    this.setData({
+      flag: !this.data.flag,
+    })
+  },
+  view() {
+    this.setData({
+      flag: !this.data.flag,
+    })
+  },
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -8,11 +8,11 @@
     <view class="personal-infor">
         <view class="personal-ingor-t">
             <view class="personal-img">
-                <image />
+                <image src="{{userinfo.avatarUrl}}"/>
             </view>
             <view class="personal-right">
-                <view class="name">jsk</view>
-                <view class="addr">jsk</view>
+                <view class="name">{{userinfo.nickName}}</view>
+                <view class="addr">{{userinfo.country}} {{userinfo.city}}</view>
                 <view class="atte-share">
                    
                      <view class="share">

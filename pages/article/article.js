@@ -1,29 +1,18 @@
-// pages/classify/classify.js
-const app = getApp();
+// pages/article/article.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    type:"",
-    bookList:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options)
-    // let aaa = app.globalData.bookList.filter((item,index)=>{
-    //   return item.type === this.options.type;
-    // })
-    this.setData({
-      type:options.type,
-      bookList:app.globalData.bookList
-    })
-    
-    console.log(app.globalData.bookList)
+
   },
 
   /**
